@@ -8,7 +8,7 @@ function Counter() {
   const dispach = useDispatch();
 
   return (
-    <div>
+    <div className='flex items-center justify-center flex-col'>
         <h3>{value}</h3>
         <div className='flex gap-3 mt-4'>
             <button onClick={()=>dispach(decrement())}>-</button>
