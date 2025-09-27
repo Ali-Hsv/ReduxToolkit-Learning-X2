@@ -16,7 +16,7 @@ function Users() {
   return (
     <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
         {
-            users.slice(0, value).map(user => (<UserItem key={user.id} user={user}/>))
+            users && users.slice(0, value).map((user) => (<UserItem key={user.id} user={user}/>))
         }
     </div>
   )
