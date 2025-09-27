@@ -9,8 +9,8 @@ function UserItem({user}) {
         <div className='w-4/5 h-full flex flex-col justify-center items-start text-xl gap-2 text-green_5'>
             <p className='bg-green_2 p-2 px-3 rounded-xl'>User: {username}</p>
             <p className='bg-green_2 p-2 px-3 rounded-xl'>Name: {name}</p>
-            <p className='bg-green_2 p-2 px-3 rounded-xl'>Email: {phone}</p>
-            <p className='bg-green_2 p-2 px-3 rounded-xl'>Phone: {email}</p>
+            <p className='bg-green_2 p-2 px-3 rounded-xl'>Email: {email}</p>
+            <p className='bg-green_2 p-2 px-3 rounded-xl'>Phone: {phone}</p>
         </div>
         <div className='w-1/5 h-full flex justify-end items-start'>
             <div className='bg-green_3 rounded-lg px-3 py-2'>id: {id}</div>
