@@ -6,7 +6,7 @@ import { getAllUsers } from './userSlice';
 function Users() {
     const {users} = useSelector(store => store.users);
     const {value} = useSelector(store => store.counter);
-    console.log('1', users);
+    // console.log('1', users);
     const dispatch = useDispatch();
 
     useEffect(()=>{
