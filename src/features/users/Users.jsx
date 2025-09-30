@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import UserItem from './UserItem'
+import UserItem from '../../components/UserItem'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllUsers } from './userSlice';
 
