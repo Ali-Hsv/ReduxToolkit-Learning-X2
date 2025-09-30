@@ -7,6 +7,8 @@ import HomePage from './pages/HomePage'
 import UsersPage from './pages/UsersPage'
 import AboutPage from './pages/AboutPage'
 import NotFoundPages from './pages/NotFoundPages'
+import EmployeeAboutPage from './pages/EmployeeAboutPage'
+import CompanyAboutPage from './pages/CompanyAboutPage'
 
 function App() {
 
@@ -15,8 +17,11 @@ function App() {
   return (
     <div className=''>
       <Routes>
-        <Route path='/' element={<HomePage select={select} />} />
-        <Route path='/about' element={<AboutPage select={select} />} />
+        <Route path='/' element={<HomePage select={select} />} /> 
+        <Route path='/about' element={<AboutPage select={select} />} >
+          <Route path='employee' element={<EmployeeAboutPage />} />
+          <Route path='company' element={<CompanyAboutPage />} />
+        </Route>
         <Route path='/users' element={<UsersPage select={select} />} />
         <Route path='*' element={<NotFoundPages />} />
       </Routes>
